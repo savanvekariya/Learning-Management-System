@@ -1,6 +1,6 @@
-const mysrvdemo = function (srv) {
-  srv.on("myfoobar", (req, res) => {
-    return "Hello world" + req.data.msg;
+const mysrvdemo = function(srv) {
+  srv.on("myfoobar", function(req, res) {
+    return "Hello" + req.data.msg;
   });
 };
 

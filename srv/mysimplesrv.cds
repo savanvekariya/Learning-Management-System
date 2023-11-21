@@ -1,10 +1,10 @@
 using myCompany.hr.lms from '../db/Students';
 
 service mysrvdemo {
+    
+    @readonly entity StudentsSRV as projection on lms.Students;
 
-    @readonly
-    entity StudentSRV as projection on lms.Students
-
-    function myfoobar(msg : String) returns String;
+    function myfoobar(msg:String) returns String;
+    
 
 }
